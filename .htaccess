@@ -1,0 +1,14 @@
+RewriteEngine on
+ErrorDocument 404 /index.html
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_REFERER} !^http://istatillo.uz/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://istatillo.uz$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.istatillo.uz/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.istatillo.uz$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://istatillo.uz/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://istatillo.uz$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.istatillo.uz/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.istatillo.uz$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]

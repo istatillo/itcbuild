@@ -1,0 +1,7 @@
+https://istatillo.uz/
+https://istatillo.uz/news
+https://istatillo.uz/news/:id
+https://istatillo.uz/courses
+https://istatillo.uz/contact
+https://istatillo.uz/test
+https://istatillo.uz/teachers
